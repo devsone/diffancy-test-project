@@ -1,1 +1,16 @@
-{}
+{
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "jsxSingleQuote": true,
+  "parser": "typescript",
+  "printWidth": 100,
+  "quoteProps": "consistent",
+  "semi": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "singleAttributePerLine": true,
+  "singleQuote": true
+}
