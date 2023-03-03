@@ -1,0 +1,23 @@
+.landing-container {
+  text-align: center;
+  padding: 6px;
+
+  &-names-input {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &-names-input {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    &-names-input {
+      margin-right: 12px;
+    }
+  }
+}
