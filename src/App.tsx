@@ -1,9 +1,9 @@
-import "./App.scss";
-import { Landing } from "./pages/landing/landing";
+import './App.scss';
+import { Landing } from './pages/landing/landing';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <Landing />
     </div>
   );

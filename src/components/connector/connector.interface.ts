@@ -1,4 +1,4 @@
-import type { Point } from "../../interfaces/general.interface";
+import type { Point } from '../../interfaces/general.interface';
 
 export interface ConnectorProps {
   sourcePoint: Point;

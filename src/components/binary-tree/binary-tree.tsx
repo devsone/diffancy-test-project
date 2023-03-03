@@ -1,12 +1,11 @@
-import { Button } from "../button/button";
-import { Connector } from "../connector/connector";
-import { Node } from "../node/node";
-import { BinaryTreeProps } from "./binary-tree.interface";
-import { useBinaryTree } from "./use-binary-tree";
+import { Button } from '../button/button';
+import { Connector } from '../connector/connector';
+import { Node } from '../node/node';
+import { BinaryTreeProps } from './binary-tree.interface';
+import { useBinaryTree } from './use-binary-tree';
 
 export const BinaryTree = ({ nodes }: BinaryTreeProps) => {
-  const { size, scale, generateBinaryTree, zoomIn, zoomOut, resetView } =
-    useBinaryTree();
+  const { size, scale, generateBinaryTree, zoomIn, zoomOut, resetView } = useBinaryTree();
   const binaryTree = generateBinaryTree(nodes);
 
   return (
@@ -18,8 +17,8 @@ export const BinaryTree = ({ nodes }: BinaryTreeProps) => {
       <div>
         <svg
           viewBox={`${(-1 * scale) / 2} 0 ${scale} ${scale}`}
-          width="100%"
-          height="calc(100vh - 220px)"
+          width='100%'
+          height='calc(100vh - 220px)'
         >
           {binaryTree.map((node) => (
             <g key={node.key}>
@@ -29,7 +28,11 @@ export const BinaryTree = ({ nodes }: BinaryTreeProps) => {
                   targetPoint={binaryTree[node.parentIndex].position}
                 />
               )}
-              <Node size={size} label={node.label} position={node.position} />
+              <Node
+                size={size}
+                label={node.label}
+                position={node.position}
+              />
             </g>
           ))}
         </svg>

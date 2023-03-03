@@ -1,6 +1,6 @@
-import { useState } from "react";
-import type { Point } from "../../interfaces/general.interface";
-import { BinaryTreeSchema } from "./binary-tree.interface";
+import { useState } from 'react';
+import type { Point } from '../../interfaces/general.interface';
+import { BinaryTreeSchema } from './binary-tree.interface';
 
 export const useBinaryTree = () => {
   const [scale, _setScale] = useState(1000);
@@ -40,7 +40,7 @@ export const useBinaryTree = () => {
         label,
         position,
         key: `${label}-${position.x}-${position.y}`,
-        parentIndex: calculateParentIndex(index),
+        parentIndex: calculateParentIndex(index)
       };
     });
   };
@@ -56,16 +56,13 @@ export const useBinaryTree = () => {
   const generatePosition = (index: number, length: number): Point => {
     const level = Math.floor(Math.log2(length));
     const indexRelativeLevel = calculateRelativeLevel(level, index);
-    const { endIndex, startIndex, isOnRightSideOfRoot } = getIndexInfo(
-      indexRelativeLevel,
-      index
-    );
+    const { endIndex, startIndex, isOnRightSideOfRoot } = getIndexInfo(indexRelativeLevel, index);
     const ratio = Math.pow(2, level - indexRelativeLevel + 1) / 2; // ratio for leafs are 1, for other levels grows exponentially
     const offset = Math.abs((endIndex - index - (index - startIndex)) * ratio); // offset from root based on index and level's ration
 
     const position: Point = {
       x: size + (isOnRightSideOfRoot ? 1 : -1) * offset * boxSize,
-      y: size + 2 * indexRelativeLevel * boxSize,
+      y: size + 2 * indexRelativeLevel * boxSize
     };
 
     return position;
