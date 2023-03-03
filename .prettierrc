@@ -12,5 +12,27 @@
   "trailingComma": "none",
   "useTabs": false,
   "singleAttributePerLine": true,
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.json", ".prettierrc"],
+      "options": { "parser": "json", "singleQuote": false }
+    },
+    {
+      "files": ["*.scss"],
+      "options": { "parser": "scss" }
+    },
+    {
+      "files": ["*.html"],
+      "options": { "parser": "html" }
+    },
+    {
+      "files": ["*.md", "*.mdx"],
+      "options": { "parser": "markdown" }
+    },
+    {
+      "files": ["*.yaml", "*.yml"],
+      "options": { "parser": "yaml" }
+    }
+  ]
 }
