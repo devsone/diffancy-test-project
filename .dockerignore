@@ -1,0 +1,6 @@
+Dockerfile
+docker-compose.yaml
+docker-compose*.yaml
+
+.prettierrc
+node_modules
