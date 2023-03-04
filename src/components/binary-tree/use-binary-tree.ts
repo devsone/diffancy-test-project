@@ -6,8 +6,8 @@ export const useBinaryTree = () => {
   const [scale, _setScale] = useState(1000);
 
   const gap = 1.1; // any value bigger than sqrt(2)
-  const size = 32;
-  const boxSize = gap * size;
+  const size = 32; // circle size
+  const boxSize = gap * size; // coordination system based on squares of this size
   const scaleStep = 125;
 
   const zoomOut = () => {

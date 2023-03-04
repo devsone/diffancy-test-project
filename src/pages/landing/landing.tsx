@@ -8,8 +8,17 @@ export const Landing = () => {
 
   return (
     <div className='landing-container'>
-      <h1>Binary Tree</h1>
-      <p>Fill below inputs with desired names. We draw binary tree for it immediately!</p>
+      <h1>
+        <span className='landing-container-header-color-reverse'>B</span>
+        <span className='landing-container-header-color-default'>inary</span>
+        <span>&nbsp;</span>
+        <span className='landing-container-header-color-reverse'>T</span>
+        <span className='landing-container-header-color-default'>ree</span>
+      </h1>
+
+      <p className='landing-container-description'>
+        Fill below inputs with desired names. We draw binary tree for it immediately!
+      </p>
 
       <Input
         value={items}

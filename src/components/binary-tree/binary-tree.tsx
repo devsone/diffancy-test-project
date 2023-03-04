@@ -10,7 +10,7 @@ export const BinaryTree = ({ nodes }: BinaryTreeProps) => {
 
   return (
     <>
-      <Button onClick={() => zoomIn()}>zoom in</Button>
+      <Button onClick={() => zoomIn()}>zoomIn</Button>
       <Button onClick={() => zoomOut()}>zoomOut</Button>
       <Button onClick={() => resetView()}>reset</Button>
 

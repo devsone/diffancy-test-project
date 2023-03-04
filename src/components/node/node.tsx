@@ -14,16 +14,17 @@ export const Node = memo(
           cx={position.x}
           cy={position.y}
           r={size - 2}
-          fill='grey'
-          stroke='yellow'
+          fill='#4527a0'
+          stroke='#311b92'
           strokeWidth='2px'
         />
 
         <text
           x={`${position.x - (truncatedLabel.length * 7.8) / ratio}`}
           y={position.y + 3}
-          fill='black'
+          fill='whitesmoke'
           fontSize='14px'
+          fontWeight='700'
         >
           <title>{label}</title>
           {truncatedLabel}
