@@ -1,6 +1,22 @@
+@use '../../styles/colors.scss' as colors;
+
 .landing-container {
   text-align: center;
   padding: 6px;
+
+  &-header-color-default {
+    color: colors.$primary-light;
+  }
+
+  &-header-color-reverse {
+    color: colors.$contrast;
+    background-color: colors.$primary-dark;
+    padding: 1px 6px;
+  }
+
+  &-description {
+    font-size: 16px;
+  }
 
   &-names-input {
     margin: 0 auto;

@@ -1,15 +1,22 @@
+@use '../../styles/colors.scss' as colors;
+
 .button-container {
   padding: 6px 12px;
-  margin: 0;
+  margin: 0 1px;
   font-size: 12px;
-  background-color: white;
-  color: black;
+  background-color: colors.$primary-light;
+  color: colors.$contrast;
   outline: none;
   box-shadow: none;
   border-radius: 3px;
   font-size: 14px;
   line-height: 1;
-  border: solid 1px gray;
+  border: solid 2px colors.$primary-dark;
   min-width: 85px;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(colors.$primary-light, 0.9);
+  }
 }
